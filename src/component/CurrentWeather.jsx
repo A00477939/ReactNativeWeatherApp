@@ -17,7 +17,7 @@ const CurrentWeather = ({ navigation }) => {
 
   const fetchWeather = (latitude = 25, longitude = 25) => {
     fetch(
-       //`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&APPID=c70084a5e8a2058ce8a54ff0f61a4afe&units=metric`
+        `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&APPID=c70084a5e8a2058ce8a54ff0f61a4afe&units=metric`
     )
       .then((res) => res.json())
       .then((json) => {
